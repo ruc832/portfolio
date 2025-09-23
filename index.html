@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+<body>
+   <header id="header">
+    <div class="container">
+    <nav>
+      <div class="left">Ruchi's Portfolio</div>
+        <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn">🌙</button>
+    </nav>
+    <div class="header-text">
+      <p>Web Developer</p>
+      <h1>Hi, I'm <span>Ruchi Chauhan</span><br> Passoniate Web Developer</h1>
+    </div>
+  </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+             I am a Computer Science student and a passionate Web Developer.
+            I love building modern and responsive websites using HTML, CSS, JavaScript,
+            and React.
+           </p>
+
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span><i class="devicon-html5-plain colored"></i> HTML</span></li>
+              <li><span><i class="devicon-css3-plain colored"></i> CSS</span></li>
+               <li><span><i class="devicon-javascript-plain colored"></i> JavaScript</span></li>
+               <li><span><i class="devicon-react-original colored"></i> React.js</span></li>
+               <li><span><i class="devicon-nodejs-plain colored"></i> Node.js</span></li>
+               <li><span><i class="devicon-mongodb-plain colored"></i> MongoDB</span></li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Education">
+           <p><strong>B.Tech</strong> – Meerut Institute of Engineering and Technology <span class="year">(2022–2026)</span></p>
+           <p><strong>Higher Secondary</strong> – RN International Public School <span class="year">(2021)</span></p>
+           <p><strong>Secondary (Class 10)</strong> – Vidya Academy <span class="year">(2019)</span></p>
+</div>
+</div>
+</div>
+
+<div id="projects">
+  <div class="container">
+    <h1 class="subtitle">My Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="Screenshot 2025-09-14 224527.png">
+        <div class="layer">
+          <h3>Price Comparison Web App</h3>
+          <p>This app compares product prices across different websites </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Screenshot 2025-09-16 114553.png">
+        <div class="layer">
+          <h3>Password Geneartor</h3>
+          <p> This app generates secure passwords based on user preferences like length, numbers, and characters</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Screenshot 2025-09-16 115629.png" class="calculator-img">
+        <div class="layer">
+          <h3>Calculator</h3>
+          <p>A simple calculator for performing addition, subtraction, multiplication, and division</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- contact -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+       <h1 class="subtitle">Contact Me</h1>
+       <p><i class="fa-solid fa-paper-plane"></i> chauhanruchi274@gmail.com</p>
+       <p><i class="fa-solid fa-phone"></i> 9084210904</p>
+       <div class="social-icons">
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+       </div>
+        <a href="ruchi1resume.pdf" download class="btn">Download Resume</a>
+      </div>
+     
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Ruchi. Made with <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+  </div>
+ </div>
+  </header>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+       }
+        for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+          }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");  
+    }
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+  });
+  </script>
+  <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer'],
+      typeSpeed: 50,
+    });
+  </script> -->
+  
+</body>
+</html>

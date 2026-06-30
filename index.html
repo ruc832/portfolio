@@ -3,157 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <meta name="description" content="Ruchi Chauhan - Frontend and full-stack developer portfolio focused on product thinking, responsive UI, and practical web apps.">
+  <title>Ruchi Chauhan | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
 </head>
 <body>
-   <header id="header">
-    <div class="container">
-    <nav>
-      <div class="left">Ruchi's Portfolio</div>
-        <ul>
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <button id="darkModeToggle" class="btn">🌙</button>
-    </nav>
-    <div class="header-text">
-      <p>Web Developer</p>
-      <h1>Hi, I'm <span>Ruchi Chauhan</span><br> Passoniate Web Developer</h1>
-    </div>
-  </div>
-    <!-- ABOUT -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <h1 class="subtitle">About Me</h1>
+  <div class="page-shell">
+    <header id="home" class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#home">Ruchi Chauhan</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-cta" href="Ruchi_Chauhan_Resume.docx" download>
+          Download Resume
+        </a>
+      </nav>
+
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer | React | JavaScript | UI Engineering</p>
+          <h1>Designing responsive web experiences that feel ready for real users.</h1>
+          <p class="hero-summary">
+            I am Ruchi Chauhan, a Computer Science student and aspiring full-stack developer.
+            I build practical, polished interfaces and focus on clarity, performance, and mobile-first design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">View Projects</a>
+            <a class="secondary-btn" href="#contact">Hire Me</a>
+          </div>
+
+          <div class="hero-points">
+            <div>
+              <strong>3 Projects</strong>
+              <span>hands-on web builds</span>
+            </div>
+            <div>
+              <strong>Responsive</strong>
+              <span>mobile-first layouts</span>
+            </div>
+            <div>
+              <strong>Open</strong>
+              <span>for internship and entry-level roles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="WhatsApp_Image_2025-09-09_at_10.30.18_AM-removebg-preview.png" alt="Portrait of Ruchi Chauhan">
+          </div>
+          <div class="floating-card card-b">
+            <span class="card-label">Strength</span>
+            <strong>Fast learning and execution</strong>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Built for teams that value clean delivery and practical problem solving.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel">
             <p>
-             I am a Computer Science student and a passionate Web Developer.
-            I love building modern and responsive websites using HTML, CSS, JavaScript,
-            and React.
-           </p>
+              I am a Computer Science student at Meerut Institute of Engineering and Technology,
+              with a strong interest in frontend development and modern web application design.
+              I enjoy turning ideas into interfaces that are easy to use, visually strong, and maintainable.
+            </p>
+            <p>
+              My strengths are responsive UI implementation, JavaScript logic, and creating projects that show
+              product thinking instead of only demo code.
+            </p>
+          </div>
 
-           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('Education')">Education</p>
-           </div>
-           <div class="tab-contents active-tab" id="Skills">
-            <ul>
-              <li><span><i class="devicon-html5-plain colored"></i> HTML</span></li>
-              <li><span><i class="devicon-css3-plain colored"></i> CSS</span></li>
-               <li><span><i class="devicon-javascript-plain colored"></i> JavaScript</span></li>
-               <li><span><i class="devicon-react-original colored"></i> React.js</span></li>
-               <li><span><i class="devicon-nodejs-plain colored"></i> Node.js</span></li>
-               <li><span><i class="devicon-mongodb-plain colored"></i> MongoDB</span></li>
-            </ul>
-           </div>
-           <div class="tab-contents" id="Education">
-           <p><strong>B.Tech</strong> – Meerut Institute of Engineering and Technology <span class="year">(2022–2026)</span></p>
-           <p><strong>Higher Secondary</strong> – RN International Public School <span class="year">(2021)</span></p>
-           <p><strong>Secondary (Class 10)</strong> – Vidya Academy <span class="year">(2019)</span></p>
-</div>
-</div>
-</div>
-
-<div id="projects">
-  <div class="container">
-    <h1 class="subtitle">My Projects</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="Screenshot 2025-09-14 224527.png">
-        <div class="layer">
-          <h3>Price Comparison Web App</h3>
-          <p>This app compares product prices across different websites </p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <div class="panel timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2022 - 2026</span>
+              <h3>B.Tech, Computer Science</h3>
+              <p>Meerut Institute of Engineering and Technology</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2021</span>
+              <h3>Higher Secondary</h3>
+              <p>RN International Public School</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2019</span>
+              <h3>Secondary School</h3>
+              <p>Vidya Academy</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="work">
-        <img src="Screenshot 2025-09-16 114553.png">
-        <div class="layer">
-          <h3>Password Geneartor</h3>
-          <p> This app generates secure passwords based on user preferences like length, numbers, and characters</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Skills</p>
+            <h2>Technologies I use to build solid interfaces and app logic.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-chip"><i class="devicon-html5-plain colored"></i>HTML5</div>
+            <div class="skill-chip"><i class="devicon-css3-plain colored"></i>CSS3</div>
+            <div class="skill-chip"><i class="devicon-javascript-plain colored"></i>JavaScript</div>
+            <div class="skill-chip"><i class="devicon-react-original colored"></i>React</div>
+            <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i>Node.js</div>
+            <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i>MongoDB</div>
+          </div>
         </div>
-      </div>
-      <div class="work">
-        <img src="Screenshot 2025-09-16 115629.png" class="calculator-img">
-        <div class="layer">
-          <h3>Calculator</h3>
-          <p>A simple calculator for performing addition, subtraction, multiplication, and division</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work that shows UI quality, logic, and real-world usefulness.</h2>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="Screenshot 2025-09-14 224527.png" alt="Price comparison web app screenshot">
+            <div class="project-body">
+              <div class="project-meta">Web App</div>
+              <h3>Price Comparison App</h3>
+              <p>Compares product prices across different websites to help users make quicker purchase decisions.</p>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <img src="Screenshot 2025-09-16 114553.png" alt="Password generator screenshot">
+            <div class="project-body">
+              <div class="project-meta">Utility Tool</div>
+              <h3>Password Generator</h3>
+              <p>Generates secure passwords based on length, numbers, and character preferences.</p>
+            </div>
+          </article>
 
-<!-- contact -->
- <div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-       <h1 class="subtitle">Contact Me</h1>
-       <p><i class="fa-solid fa-paper-plane"></i> chauhanruchi274@gmail.com</p>
-       <p><i class="fa-solid fa-phone"></i> 9084210904</p>
-       <div class="social-icons">
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-       </div>
-        <a href="ruchi1resume.pdf" download class="btn">Download Resume</a>
+          <article class="project-card">
+            <img src="Screenshot 2025-09-16 115629.png" alt="Calculator app screenshot">
+            <div class="project-body">
+              <div class="project-meta">Frontend App</div>
+              <h3>Calculator</h3>
+              <p>A simple calculator for addition, subtraction, multiplication, and division with a clean UI.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container cta-band">
+          <div>
+            <p class="section-kicker">Why hire me</p>
+            <h2>I can turn requirements into a polished interface quickly and keep the UI easy to maintain.</h2>
+          </div>
+          <a class="primary-btn" href="#contact">Let's talk</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Contact</p>
+          <h2>Reach out if you need a frontend developer or internship candidate who can ship.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel contact-panel">
+            <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:chauhanruchi274@gmail.com">chauhanruchi274@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+919084210904">9084210904</a></p>
+
+            <div class="social-icons">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <a href="ruchi1resume.pdf" download class="secondary-btn inline-btn">Download Resume</a>
+          </div>
+
+          <form class="panel contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="Your email" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me about the role or project" required></textarea>
+            </label>
+            <button type="submit" class="primary-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright (c) Ruchi Chauhan. Built with focus on clarity, responsiveness, and recruiter appeal.</p>
       </div>
-     
-      <div class="contact-right">
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-      </div>
-    </div>
+    </footer>
   </div>
-  </div>
-  <div class="copyright">
-    <p>Copyright © Ruchi. Made with <i class="fa-solid fa-heart"></i> All rights reserved.</p>
-  </div>
- </div>
-  </header>
+
   <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-       for(tablink of tablinks){
-        tablink.classList.remove("active-link")
-       }
-        for (tabcontent of tabcontents) {
-      tabcontent.classList.remove("active-tab");
-          }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");  
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        window.location.href = `mailto:chauhanruchi274@gmail.com?subject=${encodeURIComponent('Portfolio inquiry')}&body=${encodeURIComponent(
+          `Name: ${form.name.value}\nEmail: ${form.email.value}\n\n${form.message.value}`
+        )}`;
+      });
     }
-    const toggleBtn = document.getElementById("darkModeToggle");
-    toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-  });
   </script>
-  <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer'],
-      typeSpeed: 50,
-    });
-  </script> -->
-  
 </body>
 </html>
